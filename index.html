@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Welcome To My Simon Game Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://bootswatch.com/sandstone/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Simon Game</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+        <h1>Let's Play Simon Says</h1>
+        <div class="game-board">
+            <div class="wheel">
+              <ul>
+                <li class="tile red" data-tile="1"></li>
+                <li class="tile blue" data-tile="2"></li>
+                <li class="tile yellow" data-tile="3"></li>
+                <li class="tile green" data-tile="4"></li>
+              </ul>
+            </div>
+        </div>
+        <div class="game-info">
+  				<h2>Level: <span data-round="0">0</span><span>&nbsp;&nbsp;</span></h2>
+  				<button data-action="start" class="btn btn-primary" >Start</button>&nbsp; &nbsp;
+          <span><button data-action="replay" class="btn btn-primary" >RePlay</button></span>&nbsp; &nbsp;
+          <span><button data-action="restart" class="btn btn-primary" >Re-Start</button></span>
+  				<p data-action="lose"><b>Sorry, pressed the wrong sequence! Press Replay to continue</b></p>
+          <p data-action="won-text"><b>You've won!!!</b></p>
+  			</div>
+        <div class="game-options">
+  				<h2>Game Options:</h2>
+  				<input type="radio" name="mode" value="1" checked>Normal<br>
+  				<input type="radio" name="mode" value="2">Hard<br>
+  			</div>
+        <div data-action="sound"></div>
+
+    </div><!-- /.container -->
+    <br>
+    <br>
+    <footer class="text-center">
+      Created by <a href="http://kunleadeyinka.github.io/">Kunle Adeyinka</a>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
