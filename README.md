@@ -1,4 +1,4 @@
-# simon_game
+# simon_game : https://codepen.io/aadeyinka007/full/wddyJZ
 
 Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/FreeCodeCamp/full/obYBjE.
 
